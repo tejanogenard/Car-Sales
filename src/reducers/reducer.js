@@ -1,6 +1,6 @@
+import { UPDATE_ADDITIONAL_PRICE } from '../actions/actions'
 
-
-export const initalState = {
+export const initialState = {
     additionalPrice: 0,
     car: {
       price: 26395,
@@ -15,4 +15,19 @@ export const initalState = {
       { id: 3, name: 'Premium sound system', price: 500 },
       { id: 4, name: 'Rear spoiler', price: 250 }
     ]
+}
+
+
+export const reducer = (state = initialState, action) => {
+  console.log('&&&&&&&&&', state, action);
+  switch (action.type) {
+    case UPDATE_ADDITIONAL_PRICE:
+      return {
+        ...state,
+        additionalPrice: action.payload,
+      };
+    // NEW CASE HERE
+    default:
+      return state;
+  }
 }

@@ -6,9 +6,13 @@ import AdditionalFeatures from './components/AdditionalFeatures';
 import Total from './components/Total';
 
 import { createStore } from 'redux'
+import { reducer } from './reducers/reducer'
 
 //Step 1 create a store with your reducer function
-//  const store = createStore()
+
+//const store = createStore(reducer)
+
+
 
 
 
