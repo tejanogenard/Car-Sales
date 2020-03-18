@@ -5,6 +5,13 @@ import AddedFeatures from './components/AddedFeatures';
 import AdditionalFeatures from './components/AdditionalFeatures';
 import Total from './components/Total';
 
+import { createStore } from 'redux'
+
+//Step 1 create a store with your reducer function
+//  const store = createStore()
+
+
+
 const App = () => {
   const state = {
     additionalPrice: 0,
