@@ -20,14 +20,13 @@ export const initialState = {
 
 export const reducer = (state = initialState, action) => {
   console.log('&&&&&&&&&', state, action);
-  switch (action.type) {
-    case UPDATE_ADDITIONAL_PRICE:
-      return {
-        ...state,
-        additionalPrice: action.payload,
-      };
-    // NEW CASE HERE
-    default:
+  // switch (action.type) {
+  //   case UPDATE_ADDITIONAL_PRICE:
+  //     return {
+  //       ...state,
+  //       additionalPrice: action.payload,
+  //     };
+  //   // NEW CASE HERE
+  //   default:
       return state;
   }
-}
