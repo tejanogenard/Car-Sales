@@ -15,5 +15,6 @@ export const remove = () =>  {
 }
 
 export const add = newAdditonal =>  {
+    console.log(newAdditonal)
     return {type: "ADD_FEATURE", payload: newAdditonal}
 }

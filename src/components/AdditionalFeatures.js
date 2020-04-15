@@ -9,7 +9,7 @@ const AdditionalFeatures = props => {
   const buyItem = item => {
     props.add(item)
    };
-
+    console.log(props.AdditionalFeatures)
   return (
     <div className="content">
       <h4>Additional Features</h4>

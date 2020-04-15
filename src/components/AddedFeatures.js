@@ -10,7 +10,7 @@ const AddedFeatures = props => {
   const removeItem = item =>{
     props.remove(item)
   }
-  
+  console.log(props.car)
   return (
     <div className="content">
       <h6>Added features:</h6>
