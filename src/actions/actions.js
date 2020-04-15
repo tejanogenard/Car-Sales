@@ -11,7 +11,9 @@ export const REMOVE_FEATURE = "REMOVE_FEATURE"
 export const ADD_FEATURE = "ADD_FEATURE"
 
 export const remove = () =>  {
+    console.log("#######")
     return {type: REMOVE_FEATURE } 
+    //this isn't removing the feature 
 }
 
 export const add = newAdditonal =>  {

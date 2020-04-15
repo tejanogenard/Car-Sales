@@ -23,6 +23,7 @@ export const reducer = (state = initialState, action) => {
     case REMOVE_FEATURE:
       return {
         ...state,
+        // how can I remove a feature here 
       };
     case ADD_FEATURE:
       console.log(action.payload)

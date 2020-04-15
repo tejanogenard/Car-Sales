@@ -7,8 +7,9 @@ import AddedFeature from './AddedFeature';
 
 const AddedFeatures = props => {
 
-  const removeItem = item =>{
-    props.remove(item)
+  const removeItem = item =>{ 
+    console.log("$$$$$$")
+    props.remove(item)          // is this the proper remove function
   }
   console.log(props.car)
   return (
