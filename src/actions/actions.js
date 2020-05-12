@@ -1,19 +1,11 @@
 
-
-// export const UPDATE_ADDITIONAL_PRICE = ' UPDATE_ADDITIONAL_PRICE'
-
-// export const updateAdditional = newAdditonal => {
-//     return {type: UPDATE_ADDITIONAL_PRICE, payload: newAdditonal }
-// }
-
-
 export const REMOVE_FEATURE = "REMOVE_FEATURE"
 export const ADD_FEATURE = "ADD_FEATURE"
 
-export const remove = () =>  {
+export const remove = item =>  {
     console.log("#######")
-    return {type: REMOVE_FEATURE } 
-    //this isn't removing the feature 
+    return {type: REMOVE_FEATURE, payload:item } 
+    
 }
 
 export const add = newAdditonal =>  {
